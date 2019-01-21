@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>helloTKM | nasıl oynanır? </title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+  </head>
+  <body> 
+    <header>
+      <p>Taş Kağıt Makas</p>
+    </header>
+
+    <p id="bilgi">Nasıl Oynanır?</p>
+    <div style="color:rgb(178, 177, 182)">
+    <p>Temel taş makas kağıt hamleleri geçerlidir.</p>
+    <p>Taş makası kırar.</p>
+    <p>Kağıt taşı sarar.</p>
+    <p>Makas kağıdı keser...</p>
+    <p>Ama hikaye bu kadar kısa sürmemeli!</p>
+    <p>helloTKM'de her bir raund kazandığında +1 yük puanı kazanırsın.</p>
+    <p>Bu yük puanlarını herhangi bir yeteneğini güçlendirmekte kullanabilirsin.</p>
+    <p>Örneğin, Taş yeteneğinin yanındaki (+) butonu ile yükselttiğin yeteneğin 1. seviye rakip taşını kırabilir hatta 1. seviye rakip kağıdını dahi yenebilir.</p>
+    <p>Eğlenceli olmaya başladı değil mi?!</p>
+    <p>Ama işler her zaman istediğin gibi gitmeyebiliyor. Fark attığın gibi fark yediğin anlar da olacak.</p>
+    <p>Ama serüven burada da son bulmuyor! Eğlence devam etsin diye, fark yediğinde 'BENİ KURTAR' butonu imdadına yetişiyor.</p>
+    <p>Rakibin sana fark attığında otomatik görünen 'beni kurtar' butonuna bastığında +7 yük puanı alıyorsun...</p>
+    <p>Bu kadarla kalmıyor, rakibinin de 2 puanını yok ediyorsun.</p>
+    <p>Bu kadar mekanik varken, yalnız oynamak olmaz değil mi?! Elbette herkesle multiplayer bir şekilde oynayabilirsin.</p>
+    <p>Tek yapman gereken ana sayfadan 'oda kur' butonuna basıp sana verilen oda kodunu rakibine vermek.</p>
+    <p>Rakibin ise 'Çevrimiçi oda kimliği' kutucuğuna o kodu girdikten sonra 'bağlan' butonuna basarak yanına gelebilir.</p>
+    <p>Eğer oynayacak kimsen yoksa, merak etme, eğlence hala seninle. Çevrimdışı modumuz olan TMK'yı oynayabilirsin.</p>
+
+    <p class="durum">Sevgiler!</p>
+    <p class="yukPuani">helloTKM ©2019</p>
+  </div>
+
+
+    <footer style="position:absolute;bottom:0;left:0;"><small id="baglantiID">mertcanuslu18@gmail.com</small> | <small><a href="nasiloynanir.html">• Nasıl Oynanır?</a>• <a href="hakkinda.html">Hakkında</a></small></footer>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+    <script type = "text/javascript" language = "javascript" >
+    $(document).ready(function() {
+      $("#kurtar").click(function(){
+        $(".yukPuani").effect( "shake", {times:4}, 1000 );
+      });
+    });
+  </script>
+  </body>
+</html>
+<!-- mertcanuslu18@gmail.com -->
